@@ -4,7 +4,114 @@ dark blue: #06365f
 light blue: #1c5380
 */
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
+}
+
+main {
+  position: relative;
+}
+
+.title {
+  height: 400px;
+  background-image: url("../images/bgtile.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 600px;
+  width: 1000px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content-brand {
+  width: 50%;
+}
+
+.logo-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.logo-button > img {
+  width: 60%;
+}
+
+.logo-button button {
+  height: 48px;
+  width: 120px;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  font-size: 16px;
+  background-image: url("../images/bgtile.png");
+  color: white;
+  font-weight: 600;
+  border: 0.5px solid #06365f;
+  border-radius: 5px;
+  box-shadow: 0px 0px 2px 0px #16171af7;
+}
+
+.brand-texts {
+  background-color: white;
+  padding: 2px 20px;
+  border-radius: 8px;
+  box-shadow: 15px 0 10px -20px #16171af7, -15px 0 10px -20px #16171af7;
+}
+
+h1 {
+  color: #06365f;
+  line-height: 1.2em;
+  font-weight: 600;
+  color: darkslategrey;
+}
+
+p {
+  font-weight: 500;
+  color: darkslategrey;
+}
+
+.icons {
+  margin-left: 15px;
+}
+
+.icons img {
+  margin-top: 25px;
+  margin-right: 16px;
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  bottom: 150px;
+  width: 800px;
+  margin: 350px auto 0;
+  list-style: none;
+}
+
+li {
+  color: #1c5380;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+li:last-child {
+  color: #cfc7c7;
 }
